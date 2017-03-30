@@ -1,5 +1,5 @@
 //ΓΕΩΡΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΟΣ 5204
-//ΒΑΣΙΛΗΣ ΛΙΝΑΡΔΟΣ 5016
+
 
 //simperilipsi aparaititon vivliothikon
 #include <stdio.h>       //gia eisodo eksodo dedomenon

@@ -1,5 +1,4 @@
 //ΓΕΩΡΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΟΣ 5204
-//ΒΑΣΙΛΗΣ ΛΙΝΑΡΔΟΣ 5016
 
 #include "first.h"
 
@@ -22,7 +21,7 @@ int main( int argc,char *argv[])
 	if ((thl_shm = shmget(keydian, SHMSIZE, 0666)) < 0) {
 	       perror("shmget");
 	       exit(1);
-	   }
+	}
 	//αρχικοποίηση του *dianfree στη 1η θέση της shared memory
 	thl_free = (int *)shmat( thl_shm, NULL, 0 );
 	
@@ -32,7 +31,7 @@ int main( int argc,char *argv[])
 	if ((bank_shm = shmget(keymux, SHMSIZ, 0666)) < 0){
 	       perror("shmget");
 	       exit(1);
-	   }
+	}
 	//αρχικοποίηση του *bank_free στη 1η θέση της shared memory
 	bank_free = (int *)shmat( bank_shm, NULL, 0 );
 	
@@ -77,10 +76,9 @@ int main( int argc,char *argv[])
 	//καθορισμός του συνολικού μήκους διεύθυνσης 
 	len = strlen(remote.sun_path) + sizeof(remote.sun_family);
 
+
 	//με τη κλήση του συστήματος connect() συνδέεται o client με τον server 
 	//διαφορετικά εκτυπώνεται μήνυμα λάθους 
-
-
 	connection_established = connect(s, (struct sockaddr *)&remote, len);
 	if (connection_established ==-1) {
 	    perror("connect");

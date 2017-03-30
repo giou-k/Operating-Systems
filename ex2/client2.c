@@ -1,14 +1,14 @@
 //ΓΕΩΡΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΟΣ 5204
-//ΒΑΣΙΛΗΣ ΛΙΝΑΡΔΟΣ 5016
+
 
 //simperilipsi header file
 #include "first2.h"
 char buffer[5];//buffer για αποθήκευση της εισόδου από το χρήστη
 
-    int main( int argc,char *argv[])
-    {
+int main( int argc,char *argv[])
+{
 
-	printf("######### Theatro EMPROS #########\n");
+		printf("######### Theatro EMPROS #########\n");
 
    
         int s, t, len,connection_established;
@@ -41,7 +41,7 @@ char buffer[5];//buffer για αποθήκευση της εισόδου από
 	   
 	  
             printf("create new customer\n");
-	    int choose;
+	    	int choose;
 			int pososto;
 			printf("epelexe 1 gia dikes sou times h' 0 gia tyxaies \n") ;
 			scanf("%d",&choose);
@@ -117,4 +117,4 @@ char buffer[5];//buffer για αποθήκευση της εισόδου από
 
 		close(s);//κλείσιμο σύνδεσης 
 		
-	}
+}
